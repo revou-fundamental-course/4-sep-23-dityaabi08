@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR PERSEGI</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>KATAK</span> Kalkulator Kotak.</a>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start-->
+    <section class="hero">
+      <main class="content">
+        <div class="hero-judul">
+          <h1>MENGHITUNG LUAS & KELILING PERSEGI</h1>
+        </div>
+        <h1>Kalkulator Persegi</h1>
+        <p>Persegi atau bujur sangkar adalah bangun datar dua dimensi yang dibentuk oleh empat buah rusuk yang sama panjang dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku. Persegi merupakan turunan dari segi empat yang mempunyai ciri khusus keempat sisinya sama panjang dan keempat sudutnya siku-siku (90°)</p><br>
+        <pre>
+          <h2>LUAS      = (Panjang Sisi x Panjang Sisi)<br>KELILING  = (4 x Panjang Sisi)
+          </h2>
+        </pre>
+        <img src="rumus.png" alt="rumus" class="rumus-image">
+        <div class="calculator">
+          <label for="sideLength">Panjang Sisi :</label>
+          <input type="number" id="sideLength" placeholder="Masukkan panjang sisi">
+          <p></p>
+          <button onclick="calculate()" id="result">Hitung</button>
+          <button onclick="reset()" id="reset">Reset</button>
+          <div class="pageResult">
+            <p><h3>Keliling : <span id="perimeterResult">-</span></h3></p>
+            <p><h3>Luas : <span id="areaResult">-</span></h3></p>
+        </div>
+        </div>
+      </main>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
